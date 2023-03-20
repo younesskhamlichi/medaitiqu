@@ -130,8 +130,8 @@
 					die("Connection failed: " . $conn->connect_error);
 				}
 
-                
-                $sql = "INSERT INTO adherent (nom, prenom, adresse, email, telephone,C_I_N, date_naissance, type, username, password, date_inscription) VALUES ('$nom', '$prenom', '$adresse', '$email', '$telephone', '$cin', '$date_naissance', '$type', '$username', '$password', NOW())";
+
+                $sql = "INSERT INTO adherent (nom, prenom, adresse, email, telephone,C_I_N, date_naissance, type, username, password, date_inscription pénalite) VALUES ('$nom', '$prenom', '$adresse', '$email', '$telephone', '$cin', '$date_naissance', '$type', '$username', '$password', NOW() ,0)";
 
 				
 				$sql = "INSERT INTO adherent (nom, prenom, adresse, email, telephone, cin, date_naissance, type, username, password, date_inscription) VALUES ('$nom', '$prenom', '$adresse', '$email', '$telephone', '$cin', '$date_naissance', '$type', '$username', '$password', NOW())";
